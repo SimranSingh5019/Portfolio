@@ -1,4 +1,3 @@
-// Display a greeting message based on the time of day
 function displayGreeting() {
     const greetingElement = document.getElementById("greeting");
     const currentHour = new Date().getHours();
@@ -15,7 +14,6 @@ function displayGreeting() {
     greetingElement.textContent = `${greeting} I'm Simran, an aspiring Software Development Engineer.`;
 }
 
-// Smooth scroll for navigation links
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function (e) {
         e.preventDefault();
@@ -28,5 +26,5 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Initialize the greeting message when the page loads
+
 window.addEventListener("DOMContentLoaded", displayGreeting);
